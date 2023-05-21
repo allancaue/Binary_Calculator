@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 void binaryDecimal();
+void binaryHexadecimal();
 
 void binary()
 {
@@ -20,7 +21,7 @@ void binary()
             binaryDecimal();
             break;
         case 2:
-            //
+            binaryHexadecimal();
             break;
         case 3:
             repetition = false;
