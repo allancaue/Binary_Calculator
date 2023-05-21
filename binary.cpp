@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void decimalBinary();
-void decimalHexadecimal();
+void binaryDecimal();
 
-void decimal()
+void binary()
 {
     int option;
     bool repetition = true;
@@ -12,16 +11,16 @@ void decimal()
     do
     {
         system("cls");
-        printf("===CUALCULADORA===\n\n1 - Binario\n2 - Hexadecimal\n3 - Sair\n\n");
+        printf("===CUALCULADORA===\n\n1 - Decimal\n2 - Hexadecimal\n3 - Sair\n\n");
         scanf("%d", &option);
 
         switch (option)
         {
         case 1:
-            decimalBinary();
+            binaryDecimal();
             break;
         case 2:
-            decimalHexadecimal();
+            //
             break;
         case 3:
             repetition = false;

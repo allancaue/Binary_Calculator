@@ -3,6 +3,7 @@
 #include <locale.h>
 
 void decimal();
+void binary();
 
 int main()
 {
@@ -23,7 +24,7 @@ int main()
             decimal();
             break;
         case 2:
-            //binario
+            binary();
             break;
         case 3:
             //hexadecimal

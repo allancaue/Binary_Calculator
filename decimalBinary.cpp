@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void decimalBinario()
+void decimalBinary()
 {
     int decimal_number;
     int binary[65];
