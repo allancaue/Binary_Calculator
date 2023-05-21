@@ -1,0 +1,5 @@
+decimalBinario
+
+g++ main.cpp decimal.cpp decimalBinario.cpp -o Binary_Calculator
+
+./Binary_Calculator
