@@ -17,12 +17,18 @@ void hexadecimalDecimal()
     size = strlen(hexadecimal);
 
     for (int i = size - 1; i >= 0; i--) {
-        char digito = hexadecimal[i];
+        char digit = hexadecimal[i];
 
-        if (digito >= '0' && digito <= '9') {
-            decimal += (digito - '0') * pow(16, size - 1 - i);
-        } else if (digito >= 'A' && digito <= 'F') {
-            decimal += (digito - 'A' + 10) * pow(16, size - 1 - i);
+        if (digit >= '0' && digit <= '9') {
+            decimal += (digit - '0') * pow(16, size - 1 - i);
+        } else if (digit >= 'A' && digit <= 'F') {
+            decimal += (digit - 'A' + 10) * pow(16, size - 1 - i);
+        } else if (digit >= 'a' && digit <= 'f') {
+            decimal = digit - 'a' + 10 * pow(16, size - 1 - i);
+        } else {
+            printf("Digite um número hexadecimal válido.\n");
+            system("pause");
+            return;
         }
     }
 

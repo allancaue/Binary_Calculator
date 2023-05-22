@@ -1,8 +1,8 @@
-binaryHexadecimal
+hexadecimalBinary
 
 
 
-g++ main.cpp decimalHexadecimal.cpp decimalBinary.cpp decimal.cpp binaryDecimal.cpp binary.cpp binaryHexadecimal.cpp hexadecimal.cpp hexadecimalDecimal.cpp -o Binary_Calculator
+g++ main.cpp decimalHexadecimal.cpp decimalBinary.cpp decimal.cpp binaryDecimal.cpp binary.cpp binaryHexadecimal.cpp hexadecimal.cpp hexadecimalDecimal.cpp hexadecimalBinary.cpp -o Binary_Calculator
 
 
 
