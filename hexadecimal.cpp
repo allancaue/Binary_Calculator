@@ -1,42 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 
-void decimal();
-void binary();
-void hexadecimal();
+void hexadecimalDecimal();
 
-int main()
+void hexadecimal()
 {
-    setlocale(LC_ALL,"");
-
     int option;
     bool repetition = true;
 
     do
     {
         system("cls");
-        printf("===CUALCULADORA===\n\n1 - Decimal para ...\n2 - Binario para ...\n3 - Hexadecimal para ...\n4 - Sair\n\n");
+        printf("===CUALCULADORA===\n\n1 - Decimal\n2 - Binario\n3 - Sair\n\n");
         scanf("%d", &option);
 
         switch (option)
         {
         case 1:
-            decimal();
+            hexadecimalDecimal();
             break;
         case 2:
-            binary();
+            //
             break;
         case 3:
-            hexadecimal();
-            break;
-        case 4:
             repetition = false;
-            return 0;
+            return;
         default:
             printf("Opicao invalida\n");
             system("pause");
         }
     }while(repetition == true);
-
 }
